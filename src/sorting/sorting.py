@@ -15,13 +15,14 @@ def merge(arrA, arrB):
             merged_arr[ai + bi] = arrA[ai]
             ai += 1
         elif arrA[ai] < arrB[bi]:
-            merged_arr[ai + bi] arrA[ai]
+            merged_arr[ai + bi] = arrA[ai]
             ai += 1
         elif arrA[ai] >= arrB[bi]:
             merged_arr[ai + bi] = arrB[bi]
             bi += 1
 
     return merged_arr
+
 # TO-DO: implement the Merge Sort function below recursively
 def merge_sort(arr):
     # Your code here
