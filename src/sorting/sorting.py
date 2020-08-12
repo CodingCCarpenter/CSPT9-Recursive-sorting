@@ -25,11 +25,13 @@ def merge(arrA, arrB):
 
 # TO-DO: implement the Merge Sort function below recursively
 def merge_sort(arr):
-    # Your code here
-    if len(arr) < 2:
+    # base case
+    if len(arr) <= 1:
         return arr
     else:
-        
+        # separate into subArrays
+        leftSubArr = merge_sort(arr[0:len(arr)//2])
+        rightSubArr = merge_sort(arr[ len(arr)//2 : len(arr) ])
 
     return merged_arr
 
