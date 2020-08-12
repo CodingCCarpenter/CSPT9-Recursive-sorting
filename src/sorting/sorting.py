@@ -32,8 +32,9 @@ def merge_sort(arr):
         # separate into subArrays
         leftSubArr = merge_sort(arr[0:len(arr)//2])
         rightSubArr = merge_sort(arr[ len(arr)//2 : len(arr) ])
+        arr = merge(leftSubArr, rightSubArr)
 
-    return merged_arr
+    return arr
 
 # STRETCH: implement the recursive logic for merge sort in a way that doesn't 
 # utilize any extra memory
